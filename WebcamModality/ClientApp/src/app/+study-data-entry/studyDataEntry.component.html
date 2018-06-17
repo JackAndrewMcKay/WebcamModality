@@ -1,0 +1,39 @@
+<mat-card>
+  <form #studyDataForm="ngForm">
+    <mat-card-title>
+      Study Details
+    </mat-card-title>
+    <mat-form-field class="full-width">
+      <input matInput name="patientName" placeholder="Patient Name" [(ngModel)]="studyData.patientName" />
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <input matInput name="patientId" placeholder="Patient ID" [(ngModel)]="studyData.patientId" />
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <mat-select name="patientSex" placeholder="Patient Sex" [(ngModel)]="studyData.patientSex">
+        <mat-option>None</mat-option>
+        <mat-option value="M">Male</mat-option>
+        <mat-option value="F">Female</mat-option>
+        <mat-option value="O">Other</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <input matInput name="patientBirthDate" [matDatepicker]="picker" placeholder="Patient Birth Date" [(ngModel)]="studyData.patientBirthDate" />
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <input matInput name="studyId" placeholder="Study ID" [(ngModel)]="studyData.studyId"/>
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <input matInput name="accessionNumber" placeholder="Accession Number" [(ngModel)]="studyData.accessionNumber"/>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" class="full-width" (click)="logModelValues()">Start Study</button>
+  </form>
+</mat-card>

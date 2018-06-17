@@ -10,7 +10,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="fo-dicom.Json" Version="3.0.2" />
+    <PackageReference Include="fo-dicom.NetCore" Version="3.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.0" />
   </ItemGroup>
 
 </Project>
