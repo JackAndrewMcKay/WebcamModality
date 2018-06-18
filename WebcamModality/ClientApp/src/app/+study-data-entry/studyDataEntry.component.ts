@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { FormControl } from '@angular/forms';
 import { StudyData } from './studyData.model';
+
 @Component({
   selector: 'study-data-entry',
   templateUrl: './studyDataEntry.component.html',
