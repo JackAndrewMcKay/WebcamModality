@@ -1,5 +1,36 @@
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 
+body {
+  height: 100%;
+  background: gainsboro;
+}
 .full-width {
   width: 100%;
 }
+
+mat-card div {
+  height: 33vh;
+  overflow: auto;
+}
+
+tbody {
+  position: relative;
+  overflow: hidden;
+}
+
+tr {
+  overflow: hidden !important;
+  z-index: 1;
+}
+
+tr:hover {
+  background: lightgrey;
+  overflow: hidden;
+  z-index: 1;
+}
+
+tr.selected {
+  background: lightblue;
+}
+
+

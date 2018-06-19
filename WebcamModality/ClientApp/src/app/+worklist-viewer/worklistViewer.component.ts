@@ -9,6 +9,18 @@ import { MatTableDataSource } from '@angular/material';
 export class WorklistViewerComponent {
   
   constructor(private worklist: WorklistService) { }
+
+  selectedWorklistItem: WorklistItem;
+
+  toggleSelection(item: WorklistItem) {
+    if (this.selectedWorklistItem === item) {
+      this.selectedWorklistItem = null;
+    } else {
+      this.selectedWorklistItem = item;
+    }
+  }
+
+
   displayedColumns = [
     'patientId',
     'patientName',
@@ -17,6 +29,126 @@ export class WorklistViewerComponent {
     'studyId',
     'accessionNumber'];
   items = new MatTableDataSource(new Array<WorklistItem>(
+    {
+      patientName: 'A',
+      patientId: '1',
+      patientSex: 'M',
+      patientBirthDate: new Date("3/3/1995"),
+      studyId: 'test',
+      accessionNumber: 'acc'
+    },
+    {
+      patientName: 'A',
+      patientId: '1',
+      patientSex: 'M',
+      patientBirthDate: new Date("3/3/1995"),
+      studyId: 'test',
+      accessionNumber: 'acc'
+    },
+    {
+      patientName: 'A',
+      patientId: '1',
+      patientSex: 'M',
+      patientBirthDate: new Date("3/3/1995"),
+      studyId: 'test',
+      accessionNumber: 'acc'
+    },
+    {
+      patientName: 'A',
+      patientId: '1',
+      patientSex: 'M',
+      patientBirthDate: new Date("3/3/1995"),
+      studyId: 'test',
+      accessionNumber: 'acc'
+    },
+    {
+      patientName: 'A',
+      patientId: '1',
+      patientSex: 'M',
+      patientBirthDate: new Date("3/3/1995"),
+      studyId: 'test',
+      accessionNumber: 'acc'
+    },
+    {
+      patientName: 'A',
+      patientId: '1',
+      patientSex: 'M',
+      patientBirthDate: new Date("3/3/1995"),
+      studyId: 'test',
+      accessionNumber: 'acc'
+    },
+    {
+      patientName: 'A',
+      patientId: '1',
+      patientSex: 'M',
+      patientBirthDate: new Date("3/3/1995"),
+      studyId: 'test',
+      accessionNumber: 'acc'
+    },
+    {
+      patientName: 'A',
+      patientId: '1',
+      patientSex: 'M',
+      patientBirthDate: new Date("3/3/1995"),
+      studyId: 'test',
+      accessionNumber: 'acc'
+    },
+    {
+      patientName: 'A',
+      patientId: '1',
+      patientSex: 'M',
+      patientBirthDate: new Date("3/3/1995"),
+      studyId: 'test',
+      accessionNumber: 'acc'
+    },
+    {
+      patientName: 'A',
+      patientId: '1',
+      patientSex: 'M',
+      patientBirthDate: new Date("3/3/1995"),
+      studyId: 'test',
+      accessionNumber: 'acc'
+    },
+    {
+      patientName: 'A',
+      patientId: '1',
+      patientSex: 'M',
+      patientBirthDate: new Date("3/3/1995"),
+      studyId: 'test',
+      accessionNumber: 'acc'
+    },
+    {
+      patientName: 'A',
+      patientId: '1',
+      patientSex: 'M',
+      patientBirthDate: new Date("3/3/1995"),
+      studyId: 'test',
+      accessionNumber: 'acc'
+    },
+    {
+      patientName: 'A',
+      patientId: '1',
+      patientSex: 'M',
+      patientBirthDate: new Date("3/3/1995"),
+      studyId: 'test',
+      accessionNumber: 'acc'
+    },
+    {
+      patientName: 'A',
+      patientId: '1',
+      patientSex: 'M',
+      patientBirthDate: new Date("3/3/1995"),
+      studyId: 'test',
+      accessionNumber: 'acc'
+    },
+    {
+      patientName: 'A',
+      patientId: '1',
+      patientSex: 'M',
+      patientBirthDate: new Date("3/3/1995"),
+      studyId: 'test',
+      accessionNumber: 'acc'
+    },
     {
       patientName: 'A',
       patientId: '1',
